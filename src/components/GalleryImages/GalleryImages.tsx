@@ -1,12 +1,15 @@
+import GalleryImagesStyle from "./GalleryImagesStyle";
+
 const GalleryImages = () => {
   return (
-    <>
-      <div>
-        <p>Search for photos in our image bank for commercial use</p>
-        <p>Lower Price</p>
-        <p>Better Quality</p>
-      </div>
-    </>
+    <GalleryImagesStyle>
+      <h3>Search for photos in our image bank for commercial use</h3>
+      <h4>
+        Find the perfect stock photo! High quality images for websites, blogs,
+        flyers, social media, ads, marketing or design projects.
+      </h4>
+      <p>Better Quality</p>
+    </GalleryImagesStyle>
   );
 };
 
