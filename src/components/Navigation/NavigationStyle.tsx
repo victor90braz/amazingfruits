@@ -7,15 +7,21 @@ const NavigationStyle = styled.header`
   background: black;
   color: white;
   line-height: 85px;
+  width: 100%;
 
-  .main-nav_left-side,
-  .main-nav_right-side {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  nav {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .main-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 `;
 
