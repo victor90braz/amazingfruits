@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Fruits } from "../../utils/utils";
 import GalleryImagesStyle from "./GalleryImagesStyle";
+import axios from "axios";
 
 interface IFruits {
   name: string;
@@ -13,23 +14,37 @@ const GalleryImages = () => {
   const [fruit, setFruits] = useState<IFruits>(Fruits);
 
   useEffect(() => {
-    (() => {
+    (async () => {
+      const { data: pokemons } = await axios.get(
+        "https://pokeapi.co/api/v2/pokemon/"
+      );
+      console.log(pokemons);
       setFruits(Fruits);
     })();
   });
 
   return (
     <GalleryImagesStyle>
-      <h3>Search for photos in our image bank for commercial use</h3>
-      <h4>
-        Find the perfect stock photo! High quality images for websites, blogs,
-        flyers, social media, ads, marketing or design projects.
-      </h4>
-      <p>Better Quality</p>
-      <h2>{fruit.name}</h2>
-      <img src={fruit.url} alt={fruit.name} />
-      <p>{fruit.description}</p>
-      <p>{fruit.price}</p>
+      <header>
+        <h1>Search for photos in our image bank for commercial use</h1>
+        <p>
+          Find the perfect stock photo! High quality images for websites, blogs,
+          flyers, social media, ads, marketing or design projects.
+        </p>
+        <p>Better Quality</p>
+      </header>
+      <main>
+        <section className="element-left">
+          <h2>{fruit.name}</h2>
+          <img src={fruit.url} alt={fruit.name} />
+        </section>
+        <section className="element-right">
+          <p>{fruit.description}</p>
+          <span>
+            {fruit.name} = {fruit.price}€
+          </span>
+        </section>
+      </main>
     </GalleryImagesStyle>
   );
 };
