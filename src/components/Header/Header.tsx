@@ -6,7 +6,7 @@ import HeaderStyle from "./HeaderStyle";
 const Header = () => {
   return (
     <HeaderStyle>
-      <div className="header-left">
+      <div className="container-left">
         <a href="/">
           <div>
             <picture>
@@ -29,13 +29,17 @@ const Header = () => {
           </div>
         </a>
 
-        <div>
-          <BiSearchAlt2 size={20} />
-          <input type="text" placeholder="¿Dónde quieres vivir?" />
+        <div className="search">
+          <BiSearchAlt2 size={20} className="search_icon" />
+          <input
+            type="text"
+            placeholder="¿Dónde quieres vivir?"
+            className="search_input"
+          />
         </div>
       </div>
 
-      <div className="header-right">
+      <div className="container-right">
         <BsTelephone size={20} />
         <div>
           <span>Contáctanos</span>
