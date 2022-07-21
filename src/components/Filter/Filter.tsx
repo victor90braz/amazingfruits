@@ -1,8 +1,9 @@
+import { BiSearchAlt2 } from "react-icons/bi";
 const Filter = () => {
   return (
     <>
-      <span>Filter</span>
-      <input type="text" placeholder="search...." />
+      <BiSearchAlt2 />
+      <input type="text" placeholder="Where would like to live?" />
     </>
   );
 };
