@@ -1,21 +1,18 @@
+import Filter from "../Filter/Filter";
 import NavigationStyle from "./NavigationStyle";
 
 const Navigation = () => {
   return (
     <NavigationStyle>
-      <nav>
-        <ul className="main-nav">
-          <li>iStock</li>
-          <li>Images</li>
-        </ul>
-      </nav>
+      <ul className="element-left">
+        <li>iStock</li>
+        <Filter />
+      </ul>
 
-      <nav>
-        <ul className="main-nav">
-          <li>Login</li>
-          <li>Register</li>
-        </ul>
-      </nav>
+      <ul className="element-right">
+        <li>Contact us</li>
+        <li>+0800 9000 888</li>
+      </ul>
     </NavigationStyle>
   );
 };
