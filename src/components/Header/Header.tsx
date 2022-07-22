@@ -44,7 +44,7 @@ const Header = () => {
 
         <div className="telephone">
           <span>Contáctanos</span>
-          <span className="telephone_number">+34 611 657 115</span>
+          <span className="telephone_number">+34 600 757 555</span>
         </div>
 
         <div className="icon-search">
@@ -53,7 +53,7 @@ const Header = () => {
 
         <div className="perfil">
           <button className="box-button">
-            <BiUserCircle size={30} className="icon-user" />
+            <BiUserCircle size={30} />
             <span>Mi cuenta</span>
           </button>
         </div>
