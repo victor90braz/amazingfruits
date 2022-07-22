@@ -8,12 +8,12 @@ const Header = () => {
     <HeaderStyle>
       <div className="container-left">
         <a href="/">
-          <div>
+          <div className="logo">
             <picture>
               <source
                 srcSet="/images/urban-flats-logo.png"
                 media="(min-width:481px)"
-                width={200}
+                width={150}
               />
               <source
                 srcSet="/images/urban-flats-logo.png"
@@ -41,14 +41,21 @@ const Header = () => {
 
       <div className="container-right">
         <BsTelephone size={20} />
-        <div>
+
+        <div className="telephone">
           <span>Contáctanos</span>
-          <span>+34 611 657 115</span>
+          <span className="telephone_number">+34 611 657 115</span>
         </div>
-        <BiSearchAlt2 size={20} />
-        <div>
-          <BiUserCircle size={20} />
-          <span>Mi cuenta</span>
+
+        <div className="icon-search">
+          <BiSearchAlt2 size={20} className="icon-search" />
+        </div>
+
+        <div className="perfil">
+          <button className="box-button">
+            <BiUserCircle size={30} className="icon-user" />
+            <span>Mi cuenta</span>
+          </button>
         </div>
       </div>
     </HeaderStyle>
