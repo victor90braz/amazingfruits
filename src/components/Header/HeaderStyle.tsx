@@ -79,8 +79,6 @@ const HeaderStyle = styled.header`
         color: white !important;
         gap: 5px;
 
-        .icon-user {
-        }
         span {
           font-size: 16px;
           line-height: 24px;
