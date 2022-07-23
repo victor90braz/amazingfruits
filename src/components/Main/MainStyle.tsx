@@ -47,25 +47,27 @@ const MainStyle = styled.div`
         font-size: 0.8em;
       }
 
-      button {
-        -webkit-box-align: center;
-        align-items: center;
-        background: rgb(0, 167, 121);
-        box-shadow: none;
-        border-radius: 8px;
-        cursor: pointer;
+      .information {
         display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 14px;
-        outline: none;
-        padding: 12px;
-        visibility: visible;
-        color: white !important;
-        width: 150px;
-        font-weight: bold;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+          align-items: center;
+          background: rgb(0, 167, 121);
+          box-shadow: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 14px;
+          outline: none;
+          padding: 12px;
+          visibility: visible;
+          color: white !important;
+          width: 130px;
+          font-weight: bold;
+        }
       }
     }
   }

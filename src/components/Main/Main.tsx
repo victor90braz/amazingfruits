@@ -18,10 +18,59 @@ const Main = () => {
               En W Barcelona Barcelona podrás vivir a tu ritmo, llegar
               fácilmente a la uni y estar mas cerca de la playa.
             </p>
+
+            <div className="information">
+              <p>
+                8.7 <span>(10 reseñas)</span>
+              </p>
+              <button>Ver precios</button>
+            </div>
+          </div>
+        </div>
+        <div className="container-bookings">
+          <div className="box-image">
+            <img
+              src="https://exp.cdn-hotels.com/hotels/3000000/2580000/2578700/2578680/c6be1f23_z.jpg?impolicy=fcrop&w=500&h=333&q=medium"
+              alt=""
+            />
+          </div>
+          <div className="box-data">
+            <h1>Hotel W</h1>
+            <span>Servicio de comida disponibile</span>
             <p>
-              8.7 <span>(10 reseñas)</span>
+              En W Barcelona Barcelona podrás vivir a tu ritmo, llegar
+              fácilmente a la uni y estar mas cerca de la playa.
             </p>
-            <button>Ver precios</button>
+
+            <div className="information">
+              <p>
+                8.7 <span>(10 reseñas)</span>
+              </p>
+              <button>Ver precios</button>
+            </div>
+          </div>
+        </div>
+        <div className="container-bookings">
+          <div className="box-image">
+            <img
+              src="https://exp.cdn-hotels.com/hotels/3000000/2580000/2578700/2578680/c6be1f23_z.jpg?impolicy=fcrop&w=500&h=333&q=medium"
+              alt=""
+            />
+          </div>
+          <div className="box-data">
+            <h1>Hotel W</h1>
+            <span>Servicio de comida disponibile</span>
+            <p>
+              En W Barcelona Barcelona podrás vivir a tu ritmo, llegar
+              fácilmente a la uni y estar mas cerca de la playa.
+            </p>
+
+            <div className="information">
+              <p>
+                8.7 <span>(10 reseñas)</span>
+              </p>
+              <button>Ver precios</button>
+            </div>
           </div>
         </div>
       </div>
